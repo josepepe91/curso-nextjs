@@ -1,30 +1,22 @@
-import Document, {Head, Html, Main, NextScript} from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
-    /*
-    //Modificar en caso de necesitar modificaciones desde el servidor
-    static async getInitialProps(ctx: DocumentContext) {
-        const initialProps = await Document.getInitialProps(ctx)
-        return {...initialProps}
-    }
-    */
-
-    render() {
-        return (
-            <Html>
-                <Head>
-                    {/*favicon*/}
-                    {/*webfont*/}
-                    {/*stylesheet*/}
-                    {/*script/js*/}
-                </Head>
-                <body className="custom-class">
-                    <Main/>
-                    <NextScript/>
-                </body>
-            </Html>
-        )
-    }
+  render() {
+    return (
+      <Html lang="en">
+        <Head>
+          {/** FavIcon */}
+          {/** WebFont */}
+          {/** stylesheets */}
+          {/** scripts */}
+        </Head>
+        <body className="my-body-class">
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
 }
 
 export default MyDocument
